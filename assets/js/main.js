@@ -21,7 +21,8 @@ let container = document.querySelectorAll(".cel");
 
 function chooseMode() {
     soloGame = true;
-    document.querySelector("#soloGame").style.display = "none"
+    document.querySelector("#soloGame").style.display = "none";
+    restart()
 }
 
 function againstCPU() {
