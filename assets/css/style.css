@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    background-color: rgb(175, 174, 174);
+}
+
+.container {
+    display: grid;
+    padding: 5px;
+    gap:5px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 168);
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.cel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 0px;
+    margin: 0.5em;
+    background-color: white;
+}
+
+.cel:hover {
+    background-color: #000;
+}
+
+.center {
+    text-align: center;
+    margin: 1.5em 0;
+}
+
+.d-none {
+    display: none;
+}
+
+button {
+    font-weight: bold;
+    padding: 1.2em;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#container-score {
+    border-radius: 10px;
+}
+
+#div-score {
+    text-align: center;
+    margin:1em 0 3em 0;
+}
+
+#div-players {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player {
+    padding: 1em;
+    width: 150px;
+    text-align: center;
+}
+
+#scoreOne {
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+#scoreTwo {
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+#soloGame {
+    text-align: center;
+}
