@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div id="particles-js"></div>
     <header>
         <h1>Puissance 4</h1>
     </header>
@@ -70,14 +71,16 @@
             </div>
             <div id="score" class="center"></div>
             <div id="soloGame">
-                <button onclick="chooseMode()">Mode Solo</button>
+                <button onclick="chooseMode()" id="solo-mode">Mode Solo</button>
             </div>
             <div class="center">
                 <button id="restart" class="d-none button" onclick="restart()">Rejouer</button>
             </div>
         </div>
     </main>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./assets/js/main.js"></script>
+
 </body>
 
 </html>
