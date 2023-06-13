@@ -20,9 +20,17 @@ let turn = 1;
 let container = document.querySelectorAll(".cel");
 
 function chooseMode() {
-    soloGame = true;
-    document.querySelector("#soloGame").style.display = "none";
-    restart()
+    soloGame = !soloGame;
+    scoreOne = 0;
+    scoreTwo =0;
+    document.querySelector("#scoreOne").innerHTML = 0;
+    document.querySelector("#scoreTwo").innerHTML = 0;
+    restart();
+    if (soloGame) {
+        document.querySelector("#soloGame").querySelector("button").innerHTML = "Mode 2 joueurs"; 
+    }else{
+        document.querySelector("#soloGame").querySelector("button").innerHTML = "Mode Solo"; 
+    }
 }
 
 function againstCPU() {
@@ -141,7 +149,7 @@ function score(winner) {
 particlesJS("particles-js", {
   particles: {
     number: { value: 50, density: { enable: true, value_area: 800 } },
-    color: { value: "#ffffff" },
+    color: { value: "#00aeff" },
     shape: {
       type: "circle",
       stroke: { width: 0, color: "#000000" },
@@ -149,7 +157,7 @@ particlesJS("particles-js", {
       image: { src: "img/github.svg", width: 100, height: 100 }
     },
     opacity: {
-      value: 0.5,
+      value: 0.3,
       random: false,
       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
     },

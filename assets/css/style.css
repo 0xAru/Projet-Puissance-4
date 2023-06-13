@@ -16,9 +16,9 @@ header {
 }
 
 #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
     background-color: #150845;
     z-index: -1;
 }
@@ -30,7 +30,7 @@ header {
     grid-template-rows: repeat(6, 1fr);
     border: 2px solid black;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.083);
+    background-color: rgba(255, 255, 255, 0.1);
     width: 600px;
     height: 500px;
     justify-items: center;
@@ -74,10 +74,17 @@ button {
     padding: 1.2em;
     border-radius: 10px;
     letter-spacing: 1px;
+    background-color: #150845;
+    color: white;
+    border: 1px solid #3415a5;
+    cursor: pointer;
+    transition: transform .5s;
 }
 
 button:hover {
-    color: black;
+    transition: 0.8 ease;
+    transform: scale(1.2);
+    background-color: #00aeff71;
 }
 
 main {
@@ -126,19 +133,6 @@ main {
 
 #draw {
     text-align: center;
-}
-
-#solo-mode {
-    background-color: #150845;
-    color: white;
-    border: 1px solid #3415a5;
-    cursor: pointer;
-    transition: transform .5s;
-}
-
-#solo-mode:hover {
-    transition: 0.8 ease;
-    transform: scale(1.2);
 }
 
 @media (max-width: 980px) {
